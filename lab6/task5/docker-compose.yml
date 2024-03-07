@@ -1,0 +1,51 @@
+version: '3.6'
+services:
+  broker:
+    build: broker
+#    depends_on:
+#      - auldfellas
+#      - dodgygeezers
+#      - girlsallowed
+    environment:
+      - HOSTNAME = broker
+    ports:
+      - "2553:2553"
+
+  auldfellas:
+    build: auldfellas
+    environment:
+      - HOSTNAME = auldfellas
+    depends_on:
+      - broker
+#    ports:
+#      - "2550:2550"
+
+  dodgygeezers:
+    build: dodgygeezers
+    environment:
+      - HOSTNAME = dodgygeezers
+    depends_on:
+      - broker
+  #    ports:
+#      - "2551:2551"
+
+  girlsallowed:
+    build: girlsallowed
+    environment:
+      - HOSTNAME = girlsallowed
+    depends_on:
+      - broker
+#    ports:
+#      - "2552:2552"
+
+  client:
+    build: client
+    environment:
+      - HOSTNAME = client
+    depends_on:
+      - broker
+      - auldfellas
+      - dodgygeezers
+      - girlsallowed
+
+

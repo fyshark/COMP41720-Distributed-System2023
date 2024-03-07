@@ -1,0 +1,39 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>quoco-rmi</groupId>
+    <artifactId>task3</artifactId>
+    <version>0.0.1</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>core</module>
+        <module>auldfellas</module>
+        <module>dodgygeezers</module>
+        <module>girlsallowed</module>
+        <module>broker</module>
+<!--        <module>client</module>-->
+    </modules>
+
+    <properties>
+        <main.class>Main</main.class>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+<!--    <build>-->
+<!--        <pluginManagement>-->
+<!--            <plugins>-->
+<!--                &lt;!&ndash; Plugin used to run Java programs &ndash;&gt;-->
+<!--                <plugin>-->
+<!--                    <groupId>org.codehaus.mojo</groupId>-->
+<!--                    <artifactId>exec-maven-plugin</artifactId>-->
+<!--                    <version>1.6.0</version>-->
+<!--                    <configuration>-->
+<!--                        <mainClass>Main</mainClass>-->
+<!--                    </configuration>-->
+<!--                </plugin>-->
+<!--            </plugins>-->
+<!--        </pluginManagement>-->
+<!--    </build>-->
+    
+</project>

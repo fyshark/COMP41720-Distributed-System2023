@@ -1,0 +1,38 @@
+version: '3.6'
+services:
+  activemq:
+    container_name: activemq
+    image: rmohr/activemq:latest
+    ports:
+      - 8161:8161
+      - 61616:61616
+
+  broker:
+    build: broker
+    depends_on:
+      - auldfellas
+      - dodgygeezers
+      - girlsallowed
+    environment:
+      QUEUE_HOST: activemq
+
+  auldfellas:
+    build: auldfellas
+    depends_on:
+      - activemq
+    environment:
+      QUEUE_HOST: activemq
+
+  dodgygeezers:
+    build: dodgygeezers
+    depends_on:
+      - activemq
+    environment:
+      QUEUE_HOST: activemq
+
+  girlsallowed:
+    build: girlsallowed
+    depends_on:
+      - activemq
+    environment:
+      QUEUE_HOST: activemq

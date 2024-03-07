@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/lifeco-akka/task1/lifeco-basic" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/task2/lifeco-basic" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/task3/lifeco-basic" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/task4/lifeco-basic" vcs="Git" />
+  </component>
+</project>

@@ -1,0 +1,45 @@
+import org.junit.BeforeClass;
+import org.junit.Test;
+import service.auldfellas.AFQService;
+import service.broker.LocalBrokerService;
+import service.core.*;
+import service.dodgygeezers.DGQService;
+import service.girlsallowed.GAQService;
+
+import javax.xml.namespace.QName;
+import javax.xml.ws.Endpoint;
+import javax.xml.ws.Service;
+import java.net.URL;
+import java.util.LinkedList;
+
+import static org.junit.Assert.*;
+
+public class BrokerServiceUnitTest {
+    @BeforeClass
+    public static void setup() {
+        Endpoint.publish("http://0.0.0.0:9001/quotation", new AFQService());
+        Endpoint.publish("http://0.0.0.0:9002/quotation", new DGQService());
+        Endpoint.publish("http://0.0.0.0:9003/quotation", new GAQService());
+        Advertiser.jmdnsQuotationAdvertise("localhost", "9001", "auldfellas");
+        Endpoint.publish("http://0.0.0.0:9000/broker", new LocalBrokerService());
+    }
+
+//    @Test
+//    public void connectionTest() throws Exception {
+//        URL wsdlUrl = new URL("http://localhost:9000/broker?wsdl");
+//        QName serviceName =
+//                new QName("http://core.service/", "QuotationService");
+//        Service service = Service.create(wsdlUrl, serviceName);
+//        QName portName =
+//                new QName("http://core.service/", "QuotationServicePort");
+//        BrokerService quotationService =
+//                service.getPort(portName, BrokerService.class);
+//        LinkedList<Quotation> quotations = quotationService
+//                .getQuotations(new ClientInfo(
+//                        "Niki Collier", ClientInfo.FEMALE, 49,
+//                        1.5494, 80, false, false));
+//        assertFalse(quotations.isEmpty());
+//
+//    }
+
+}

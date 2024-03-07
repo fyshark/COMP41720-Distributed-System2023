@@ -1,0 +1,15 @@
+# Created at 2023-10-07T21:47:14.797
+java.lang.OutOfMemoryError: unable to create new native thread
+	at java.lang.Thread.start0(Native Method)
+	at java.lang.Thread.start(Thread.java:719)
+	at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:957)
+	at java.util.concurrent.ThreadPoolExecutor.ensurePrestart(ThreadPoolExecutor.java:1603)
+	at java.util.concurrent.ScheduledThreadPoolExecutor.delayedExecute(ScheduledThreadPoolExecutor.java:334)
+	at java.util.concurrent.ScheduledThreadPoolExecutor.schedule(ScheduledThreadPoolExecutor.java:533)
+	at org.apache.maven.surefire.booter.ForkedBooter.launchLastDitchDaemonShutdownThread(ForkedBooter.java:407)
+	at org.apache.maven.surefire.booter.ForkedBooter.acknowledgedExit(ForkedBooter.java:373)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:178)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="BrokerServiceUnitTest" time="2.721" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/fio/Projects/semester4/COMP41720/lab3/task3/broker/target/test-classes:/Users/fio/Projects/semester4/COMP41720/lab3/task3/broker/target/classes:/Users/fio/Projects/semester4/COMP41720/lab3/task3/auldfellas/target/auldfellas-0.0.1.jar:/Users/fio/Projects/semester4/COMP41720/lab3/task3/core/target/core-0.0.1.jar:/Users/fio/.m2/repository/org/glassfish/metro/webservices-rt/2.4.4/webservices-rt-2.4.4.jar:/Users/fio/.m2/repository/org/glassfish/metro/webservices-api/2.4.4/webservices-api-2.4.4.jar:/Users/fio/.m2/repository/jakarta/xml/ws/jakarta.xml.ws-api/4.0.0/jakarta.xml.ws-api-4.0.0.jar:/Users/fio/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/fio/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/fio/Projects/semester4/COMP41720/lab3/task3/dodgygeezers/target/dodgygeezers-0.0.1.jar:/Users/fio/Projects/semester4/COMP41720/lab3/task3/girlsallowed/target/girlsallowed-0.0.1.jar:/Users/fio/.m2/repository/com/sun/xml/ws/jaxws-rt/2.3.3/jaxws-rt-2.3.3.jar:/Users/fio/.m2/repository/com/sun/xml/ws/policy/2.7.10/policy-2.7.10.jar:/Users/fio/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:/Users/fio/.m2/repository/org/glassfish/ha/ha-api/3.1.12/ha-api-3.1.12.jar:/Users/fio/.m2/repository/org/glassfish/external/management-api/3.2.2/management-api-3.2.2.jar:/Users/fio/.m2/repository/org/glassfish/gmbal/gmbal/4.0.1/gmbal-4.0.1.jar:/Users/fio/.m2/repository/org/glassfish/pfl/pfl-tf/4.1.0/pfl-tf-4.1.0.jar:/Users/fio/.m2/repository/org/glassfish/pfl/pfl-basic/4.1.0/pfl-basic-4.1.0.jar:/Users/fio/.m2/repository/org/jvnet/staxex/stax-ex/1.8.3/stax-ex-1.8.3.jar:/Users/fio/.m2/repository/com/sun/xml/stream/buffer/streambuffer/1.5.9/streambuffer-1.5.9.jar:/Users/fio/.m2/repository/org/jvnet/mimepull/mimepull/1.9.13/mimepull-1.9.13.jar:/Users/fio/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.18/FastInfoset-1.2.18.jar:/Users/fio/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/fio/.m2/repository/com/sun/xml/messaging/saaj/saaj-impl/1.5.2/saaj-impl-1.5.2.jar:/Users/fio/.m2/repository/com/fasterxml/woodstox/woodstox-core/5.1.0/woodstox-core-5.1.0.jar:/Users/fio/.m2/repository/org/codehaus/woodstox/stax2-api/4.1/stax2-api-4.1.jar:/Users/fio/.m2/repository/com/sun/xml/ws/jaxws-tools/2.3.3/jaxws-tools-2.3.3.jar:/Users/fio/.m2/repository/com/sun/xml/bind/jaxb-xjc/2.3.3/jaxb-xjc-2.3.3.jar:/Users/fio/.m2/repository/com/sun/xml/bind/jaxb-jxc/2.3.3/jaxb-jxc-2.3.3.jar:/Users/fio/.m2/repository/com/sun/xml/ws/jaxws-eclipselink-plugin/2.3.3/jaxws-eclipselink-plugin-2.3.3.jar:/Users/fio/.m2/repository/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar:/Users/fio/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.moxy/2.7.6/org.eclipse.persistence.moxy-2.7.6.jar:/Users/fio/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.core/2.7.6/org.eclipse.persistence.core-2.7.6.jar:/Users/fio/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.asm/2.7.6/org.eclipse.persistence.asm-2.7.6.jar:/Users/fio/.m2/repository/com/sun/mail/jakarta.mail/1.6.5/jakarta.mail-1.6.5.jar:/Users/fio/.m2/repository/com/sun/xml/ws/sdo-eclipselink-plugin/2.3.3/sdo-eclipselink-plugin-2.3.3.jar:/Users/fio/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.sdo/2.7.6/org.eclipse.persistence.sdo-2.7.6.jar:/Users/fio/.m2/repository/org/eclipse/persistence/commonj.sdo/2.1.1/commonj.sdo-2.1.1.jar:/Users/fio/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/fio/.m2/repository/jakarta/xml/soap/jakarta.xml.soap-api/1.4.2/jakarta.xml.soap-api-1.4.2.jar:/Users/fio/.m2/repository/jakarta/jws/jakarta.jws-api/2.1.0/jakarta.jws-api-2.1.0.jar:/Users/fio/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/Users/fio/Library/Java/JavaVirtualMachines/corretto-1.8.0_382/Contents/Home/jre/lib"/>
+    <property name="sun.java.command" value="/Users/fio/Projects/semester4/COMP41720/lab3/task3/broker/target/surefire/surefirebooter-20231011233347319_18.jar /Users/fio/Projects/semester4/COMP41720/lab3/task3/broker/target/surefire 2023-10-11T23-33-35_854-jvmRun1 surefire-20231011233347319_16tmp surefire_3-20231011233347319_17tmp"/>
+    <property name="surefire.test.class.path" value="/Users/fio/Projects/semester4/COMP41720/lab3/task3/broker/target/test-classes:/Users/fio/Projects/semester4/COMP41720/lab3/task3/broker/target/classes:/Users/fio/Projects/semester4/COMP41720/lab3/task3/auldfellas/target/auldfellas-0.0.1.jar:/Users/fio/Projects/semester4/COMP41720/lab3/task3/core/target/core-0.0.1.jar:/Users/fio/.m2/repository/org/glassfish/metro/webservices-rt/2.4.4/webservices-rt-2.4.4.jar:/Users/fio/.m2/repository/org/glassfish/metro/webservices-api/2.4.4/webservices-api-2.4.4.jar:/Users/fio/.m2/repository/jakarta/xml/ws/jakarta.xml.ws-api/4.0.0/jakarta.xml.ws-api-4.0.0.jar:/Users/fio/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/fio/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/fio/Projects/semester4/COMP41720/lab3/task3/dodgygeezers/target/dodgygeezers-0.0.1.jar:/Users/fio/Projects/semester4/COMP41720/lab3/task3/girlsallowed/target/girlsallowed-0.0.1.jar:/Users/fio/.m2/repository/com/sun/xml/ws/jaxws-rt/2.3.3/jaxws-rt-2.3.3.jar:/Users/fio/.m2/repository/com/sun/xml/ws/policy/2.7.10/policy-2.7.10.jar:/Users/fio/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:/Users/fio/.m2/repository/org/glassfish/ha/ha-api/3.1.12/ha-api-3.1.12.jar:/Users/fio/.m2/repository/org/glassfish/external/management-api/3.2.2/management-api-3.2.2.jar:/Users/fio/.m2/repository/org/glassfish/gmbal/gmbal/4.0.1/gmbal-4.0.1.jar:/Users/fio/.m2/repository/org/glassfish/pfl/pfl-tf/4.1.0/pfl-tf-4.1.0.jar:/Users/fio/.m2/repository/org/glassfish/pfl/pfl-basic/4.1.0/pfl-basic-4.1.0.jar:/Users/fio/.m2/repository/org/jvnet/staxex/stax-ex/1.8.3/stax-ex-1.8.3.jar:/Users/fio/.m2/repository/com/sun/xml/stream/buffer/streambuffer/1.5.9/streambuffer-1.5.9.jar:/Users/fio/.m2/repository/org/jvnet/mimepull/mimepull/1.9.13/mimepull-1.9.13.jar:/Users/fio/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.18/FastInfoset-1.2.18.jar:/Users/fio/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/fio/.m2/repository/com/sun/xml/messaging/saaj/saaj-impl/1.5.2/saaj-impl-1.5.2.jar:/Users/fio/.m2/repository/com/fasterxml/woodstox/woodstox-core/5.1.0/woodstox-core-5.1.0.jar:/Users/fio/.m2/repository/org/codehaus/woodstox/stax2-api/4.1/stax2-api-4.1.jar:/Users/fio/.m2/repository/com/sun/xml/ws/jaxws-tools/2.3.3/jaxws-tools-2.3.3.jar:/Users/fio/.m2/repository/com/sun/xml/bind/jaxb-xjc/2.3.3/jaxb-xjc-2.3.3.jar:/Users/fio/.m2/repository/com/sun/xml/bind/jaxb-jxc/2.3.3/jaxb-jxc-2.3.3.jar:/Users/fio/.m2/repository/com/sun/xml/ws/jaxws-eclipselink-plugin/2.3.3/jaxws-eclipselink-plugin-2.3.3.jar:/Users/fio/.m2/repository/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar:/Users/fio/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.moxy/2.7.6/org.eclipse.persistence.moxy-2.7.6.jar:/Users/fio/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.core/2.7.6/org.eclipse.persistence.core-2.7.6.jar:/Users/fio/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.asm/2.7.6/org.eclipse.persistence.asm-2.7.6.jar:/Users/fio/.m2/repository/com/sun/mail/jakarta.mail/1.6.5/jakarta.mail-1.6.5.jar:/Users/fio/.m2/repository/com/sun/xml/ws/sdo-eclipselink-plugin/2.3.3/sdo-eclipselink-plugin-2.3.3.jar:/Users/fio/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.sdo/2.7.6/org.eclipse.persistence.sdo-2.7.6.jar:/Users/fio/.m2/repository/org/eclipse/persistence/commonj.sdo/2.1.1/commonj.sdo-2.1.1.jar:/Users/fio/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/fio/.m2/repository/jakarta/xml/soap/jakarta.xml.soap-api/1.4.2/jakarta.xml.soap-api-1.4.2.jar:/Users/fio/.m2/repository/jakarta/jws/jakarta.jws-api/2.1.0/jakarta.jws-api-2.1.0.jar:/Users/fio/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/fio"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/Users/fio/Library/Java/JavaVirtualMachines/corretto-1.8.0_382/Contents/Home/jre"/>
+    <property name="basedir" value="/Users/fio/Projects/semester4/COMP41720/lab3/task3/broker"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/fio/Projects/semester4/COMP41720/lab3/task3/broker/target/surefire/surefirebooter-20231011233347319_18.jar"/>
+    <property name="sun.boot.class.path" value="/Users/fio/Library/Java/JavaVirtualMachines/corretto-1.8.0_382/Contents/Home/jre/lib/resources.jar:/Users/fio/Library/Java/JavaVirtualMachines/corretto-1.8.0_382/Contents/Home/jre/lib/rt.jar:/Users/fio/Library/Java/JavaVirtualMachines/corretto-1.8.0_382/Contents/Home/jre/lib/sunrsasign.jar:/Users/fio/Library/Java/JavaVirtualMachines/corretto-1.8.0_382/Contents/Home/jre/lib/jsse.jar:/Users/fio/Library/Java/JavaVirtualMachines/corretto-1.8.0_382/Contents/Home/jre/lib/jce.jar:/Users/fio/Library/Java/JavaVirtualMachines/corretto-1.8.0_382/Contents/Home/jre/lib/charsets.jar:/Users/fio/Library/Java/JavaVirtualMachines/corretto-1.8.0_382/Contents/Home/jre/lib/jfr.jar:/Users/fio/Library/Java/JavaVirtualMachines/corretto-1.8.0_382/Contents/Home/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_382-b05"/>
+    <property name="user.name" value="fio"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="14.0"/>
+    <property name="java.endorsed.dirs" value="/Users/fio/Library/Java/JavaVirtualMachines/corretto-1.8.0_382/Contents/Home/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/fio/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-8/issues/"/>
+    <property name="java.io.tmpdir" value="/var/folders/c1/0p2g0x9n6fq4khgcrhdld8wr0000gn/T/"/>
+    <property name="java.version" value="1.8.0_382"/>
+    <property name="user.dir" value="/Users/fio/Projects/semester4/COMP41720/lab3/task3/broker"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/fio/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="25.382-b05"/>
+    <property name="java.specification.maintenance.version" value="5"/>
+    <property name="java.ext.dirs" value="/Users/fio/Library/Java/Extensions:/Users/fio/Library/Java/JavaVirtualMachines/corretto-1.8.0_382/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="connectionTest" classname="BrokerServiceUnitTest" time="0.916">
+    <system-err><![CDATA[Oct 11, 2023 11:33:49 PM com.sun.xml.ws.server.MonitorBase createRoot
+INFO: Metro monitoring rootname successfully set to: com.sun.metro:pp=/,type=WSEndpoint,name=QuotationService-QuotationServicePort
+Oct 11, 2023 11:33:49 PM com.sun.xml.wss.provider.wsit.SecurityTubeFactory isSecurityConfigPresent
+WARNING: WSSPVD0066: ServletContext was not found
+java.lang.ClassNotFoundException: javax.servlet.ServletContext
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sun.xml.wss.provider.wsit.SecurityTubeFactory.isSecurityConfigPresent(SecurityTubeFactory.java:402)
+	at com.sun.xml.wss.provider.wsit.SecurityTubeFactory.createTube(SecurityTubeFactory.java:171)
+	at com.sun.xml.ws.assembler.TubeCreator.createTube(TubeCreator.java:67)
+	at com.sun.xml.ws.assembler.MetroTubelineAssembler.createServer(MetroTubelineAssembler.java:166)
+	at com.sun.xml.ws.server.WSEndpointImpl.<init>(WSEndpointImpl.java:163)
+	at com.sun.xml.ws.server.EndpointFactory.create(EndpointFactory.java:307)
+	at com.sun.xml.ws.server.EndpointFactory.create(EndpointFactory.java:302)
+	at com.sun.xml.ws.server.EndpointFactory.createEndpoint(EndpointFactory.java:134)
+	at com.sun.xml.ws.api.server.WSEndpoint.create(WSEndpoint.java:548)
+	at com.sun.xml.ws.api.server.WSEndpoint.create(WSEndpoint.java:530)
+	at com.sun.xml.ws.transport.http.server.EndpointImpl.createEndpoint(EndpointImpl.java:304)
+	at com.sun.xml.ws.transport.http.server.EndpointImpl.publish(EndpointImpl.java:217)
+	at com.sun.xml.ws.spi.ProviderImpl.createAndPublishEndpoint(ProviderImpl.java:111)
+	at javax.xml.ws.Endpoint.publish(Endpoint.java:240)
+	at BrokerServiceUnitTest.setup(BrokerServiceUnitTest.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+Oct 11, 2023 11:33:49 PM com.sun.xml.ws.server.MonitorBase createRoot
+INFO: Metro monitoring rootname successfully set to: com.sun.metro:pp=/,type=WSEndpoint,name=QuotationService-QuotationServicePort
+Oct 11, 2023 11:33:49 PM com.sun.xml.wss.provider.wsit.SecurityTubeFactory isSecurityConfigPresent
+WARNING: WSSPVD0066: ServletContext was not found
+java.lang.ClassNotFoundException: javax.servlet.ServletContext
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sun.xml.wss.provider.wsit.SecurityTubeFactory.isSecurityConfigPresent(SecurityTubeFactory.java:402)
+	at com.sun.xml.wss.provider.wsit.SecurityTubeFactory.createTube(SecurityTubeFactory.java:171)
+	at com.sun.xml.ws.assembler.TubeCreator.createTube(TubeCreator.java:67)
+	at com.sun.xml.ws.assembler.MetroTubelineAssembler.createServer(MetroTubelineAssembler.java:166)
+	at com.sun.xml.ws.server.WSEndpointImpl.<init>(WSEndpointImpl.java:163)
+	at com.sun.xml.ws.server.EndpointFactory.create(EndpointFactory.java:307)
+	at com.sun.xml.ws.server.EndpointFactory.create(EndpointFactory.java:302)
+	at com.sun.xml.ws.server.EndpointFactory.createEndpoint(EndpointFactory.java:134)
+	at com.sun.xml.ws.api.server.WSEndpoint.create(WSEndpoint.java:548)
+	at com.sun.xml.ws.api.server.WSEndpoint.create(WSEndpoint.java:530)
+	at com.sun.xml.ws.transport.http.server.EndpointImpl.createEndpoint(EndpointImpl.java:304)
+	at com.sun.xml.ws.transport.http.server.EndpointImpl.publish(EndpointImpl.java:217)
+	at com.sun.xml.ws.spi.ProviderImpl.createAndPublishEndpoint(ProviderImpl.java:111)
+	at javax.xml.ws.Endpoint.publish(Endpoint.java:240)
+	at BrokerServiceUnitTest.setup(BrokerServiceUnitTest.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+Oct 11, 2023 11:33:49 PM com.sun.xml.ws.server.MonitorBase createRoot
+INFO: Metro monitoring rootname successfully set to: com.sun.metro:pp=/,type=WSEndpoint,name=QuotationService-QuotationServicePort
+Oct 11, 2023 11:33:49 PM com.sun.xml.wss.provider.wsit.SecurityTubeFactory isSecurityConfigPresent
+WARNING: WSSPVD0066: ServletContext was not found
+java.lang.ClassNotFoundException: javax.servlet.ServletContext
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sun.xml.wss.provider.wsit.SecurityTubeFactory.isSecurityConfigPresent(SecurityTubeFactory.java:402)
+	at com.sun.xml.wss.provider.wsit.SecurityTubeFactory.createTube(SecurityTubeFactory.java:171)
+	at com.sun.xml.ws.assembler.TubeCreator.createTube(TubeCreator.java:67)
+	at com.sun.xml.ws.assembler.MetroTubelineAssembler.createServer(MetroTubelineAssembler.java:166)
+	at com.sun.xml.ws.server.WSEndpointImpl.<init>(WSEndpointImpl.java:163)
+	at com.sun.xml.ws.server.EndpointFactory.create(EndpointFactory.java:307)
+	at com.sun.xml.ws.server.EndpointFactory.create(EndpointFactory.java:302)
+	at com.sun.xml.ws.server.EndpointFactory.createEndpoint(EndpointFactory.java:134)
+	at com.sun.xml.ws.api.server.WSEndpoint.create(WSEndpoint.java:548)
+	at com.sun.xml.ws.api.server.WSEndpoint.create(WSEndpoint.java:530)
+	at com.sun.xml.ws.transport.http.server.EndpointImpl.createEndpoint(EndpointImpl.java:304)
+	at com.sun.xml.ws.transport.http.server.EndpointImpl.publish(EndpointImpl.java:217)
+	at com.sun.xml.ws.spi.ProviderImpl.createAndPublishEndpoint(ProviderImpl.java:111)
+	at javax.xml.ws.Endpoint.publish(Endpoint.java:240)
+	at BrokerServiceUnitTest.setup(BrokerServiceUnitTest.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+Oct 11, 2023 11:33:49 PM com.sun.xml.ws.server.MonitorBase createRoot
+INFO: Metro monitoring rootname successfully set to: com.sun.metro:pp=/,type=WSEndpoint,name=BrokerService-BrokerServicePort
+Oct 11, 2023 11:33:49 PM com.sun.xml.wss.provider.wsit.SecurityTubeFactory isSecurityConfigPresent
+WARNING: WSSPVD0066: ServletContext was not found
+java.lang.ClassNotFoundException: javax.servlet.ServletContext
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sun.xml.wss.provider.wsit.SecurityTubeFactory.isSecurityConfigPresent(SecurityTubeFactory.java:402)
+	at com.sun.xml.wss.provider.wsit.SecurityTubeFactory.createTube(SecurityTubeFactory.java:171)
+	at com.sun.xml.ws.assembler.TubeCreator.createTube(TubeCreator.java:67)
+	at com.sun.xml.ws.assembler.MetroTubelineAssembler.createServer(MetroTubelineAssembler.java:166)
+	at com.sun.xml.ws.server.WSEndpointImpl.<init>(WSEndpointImpl.java:163)
+	at com.sun.xml.ws.server.EndpointFactory.create(EndpointFactory.java:307)
+	at com.sun.xml.ws.server.EndpointFactory.create(EndpointFactory.java:302)
+	at com.sun.xml.ws.server.EndpointFactory.createEndpoint(EndpointFactory.java:134)
+	at com.sun.xml.ws.api.server.WSEndpoint.create(WSEndpoint.java:548)
+	at com.sun.xml.ws.api.server.WSEndpoint.create(WSEndpoint.java:530)
+	at com.sun.xml.ws.transport.http.server.EndpointImpl.createEndpoint(EndpointImpl.java:304)
+	at com.sun.xml.ws.transport.http.server.EndpointImpl.publish(EndpointImpl.java:217)
+	at com.sun.xml.ws.spi.ProviderImpl.createAndPublishEndpoint(ProviderImpl.java:111)
+	at javax.xml.ws.Endpoint.publish(Endpoint.java:240)
+	at BrokerServiceUnitTest.setup(BrokerServiceUnitTest.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+Oct 11, 2023 11:33:49 PM com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit handle
+SEVERE: Unsupported Content-Type: application/soap+xml Supported ones are: [text/xml]
+com.sun.xml.ws.server.UnsupportedMediaException: Unsupported Content-Type: application/soap+xml Supported ones are: [text/xml]
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:205)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:136)
+	at com.sun.xml.ws.encoding.SOAPBindingCodec.decode(SOAPBindingCodec.java:284)
+	at com.sun.xml.ws.transport.http.HttpAdapter.decodePacket(HttpAdapter.java:473)
+	at com.sun.xml.ws.transport.http.HttpAdapter.access$500(HttpAdapter.java:78)
+	at com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit.handle(HttpAdapter.java:821)
+	at com.sun.xml.ws.transport.http.HttpAdapter.handle(HttpAdapter.java:392)
+	at com.sun.xml.ws.transport.http.server.WSHttpHandler.handleExchange(WSHttpHandler.java:83)
+	at com.sun.xml.ws.transport.http.server.WSHttpHandler.handle(WSHttpHandler.java:67)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:822)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:794)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+Oct 11, 2023 11:33:49 PM com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit handle
+SEVERE: Unsupported Content-Type: application/soap+xml Supported ones are: [text/xml]
+com.sun.xml.ws.server.UnsupportedMediaException: Unsupported Content-Type: application/soap+xml Supported ones are: [text/xml]
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:205)
+	at com.sun.xml.ws.encoding.StreamSOAPCodec.decode(StreamSOAPCodec.java:136)
+	at com.sun.xml.ws.encoding.SOAPBindingCodec.decode(SOAPBindingCodec.java:284)
+	at com.sun.xml.ws.transport.http.HttpAdapter.decodePacket(HttpAdapter.java:473)
+	at com.sun.xml.ws.transport.http.HttpAdapter.access$500(HttpAdapter.java:78)
+	at com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit.handle(HttpAdapter.java:821)
+	at com.sun.xml.ws.transport.http.HttpAdapter.handle(HttpAdapter.java:392)
+	at com.sun.xml.ws.transport.http.server.WSHttpHandler.handleExchange(WSHttpHandler.java:83)
+	at com.sun.xml.ws.transport.http.server.WSHttpHandler.handle(WSHttpHandler.java:67)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:822)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:794)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+]]></system-err>
+  </testcase>
+</testsuite>

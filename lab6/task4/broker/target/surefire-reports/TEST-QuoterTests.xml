@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="QuoterTests" time="1.412" tests="2" errors="2" skipped="0" failures="0">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/fio/Projects/semester4/COMP41720/lab6/task4/broker/target/test-classes:/Users/fio/Projects/semester4/COMP41720/lab6/task4/broker/target/classes:/Users/fio/Projects/semester4/COMP41720/lab6/task4/core/target/core-0.0.1.jar:/Users/fio/.m2/repository/org/glassfish/metro/webservices-rt/2.4.4/webservices-rt-2.4.4.jar:/Users/fio/.m2/repository/org/glassfish/metro/webservices-api/2.4.4/webservices-api-2.4.4.jar:/Users/fio/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/fio/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/fio/.m2/repository/com/typesafe/akka/akka-testkit_2.12/2.6.20/akka-testkit_2.12-2.6.20.jar:/Users/fio/.m2/repository/org/scala-lang/scala-library/2.12.16/scala-library-2.12.16.jar:/Users/fio/.m2/repository/com/typesafe/akka/akka-actor_2.12/2.6.20/akka-actor_2.12-2.6.20.jar:/Users/fio/.m2/repository/com/typesafe/config/1.4.2/config-1.4.2.jar:/Users/fio/.m2/repository/org/scala-lang/modules/scala-java8-compat_2.12/0.8.0/scala-java8-compat_2.12-0.8.0.jar:/Users/fio/.m2/repository/com/typesafe/akka/akka-remote_2.12/2.6.20/akka-remote_2.12-2.6.20.jar:/Users/fio/.m2/repository/com/typesafe/akka/akka-stream_2.12/2.6.20/akka-stream_2.12-2.6.20.jar:/Users/fio/.m2/repository/com/typesafe/akka/akka-protobuf-v3_2.12/2.6.20/akka-protobuf-v3_2.12-2.6.20.jar:/Users/fio/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/fio/.m2/repository/com/typesafe/ssl-config-core_2.12/0.4.3/ssl-config-core_2.12-0.4.3.jar:/Users/fio/.m2/repository/org/scala-lang/modules/scala-parser-combinators_2.12/1.1.2/scala-parser-combinators_2.12-1.1.2.jar:/Users/fio/.m2/repository/com/typesafe/akka/akka-pki_2.12/2.6.20/akka-pki_2.12-2.6.20.jar:/Users/fio/.m2/repository/com/hierynomus/asn-one/0.5.0/asn-one-0.5.0.jar:/Users/fio/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/fio/.m2/repository/org/agrona/agrona/1.15.1/agrona-1.15.1.jar:/Users/fio/.m2/repository/io/netty/netty/3.10.6.Final/netty-3.10.6.Final.jar:/Users/fio/.m2/repository/com/typesafe/akka/akka-cluster-typed_2.12/2.6.20/akka-cluster-typed_2.12-2.6.20.jar:/Users/fio/.m2/repository/com/typesafe/akka/akka-actor-typed_2.12/2.6.20/akka-actor-typed_2.12-2.6.20.jar:/Users/fio/.m2/repository/com/typesafe/akka/akka-slf4j_2.12/2.6.20/akka-slf4j_2.12-2.6.20.jar:/Users/fio/.m2/repository/com/typesafe/akka/akka-cluster_2.12/2.6.20/akka-cluster_2.12-2.6.20.jar:/Users/fio/.m2/repository/com/typesafe/akka/akka-coordination_2.12/2.6.20/akka-coordination_2.12-2.6.20.jar:/Users/fio/.m2/repository/com/typesafe/akka/akka-cluster-tools_2.12/2.6.20/akka-cluster-tools_2.12-2.6.20.jar:/Users/fio/.m2/repository/com/typesafe/akka/akka-distributed-data_2.12/2.6.20/akka-distributed-data_2.12-2.6.20.jar:/Users/fio/.m2/repository/org/lmdbjava/lmdbjava/0.7.0/lmdbjava-0.7.0.jar:/Users/fio/.m2/repository/com/github/jnr/jnr-ffi/2.1.9/jnr-ffi-2.1.9.jar:/Users/fio/.m2/repository/org/ow2/asm/asm/5.0.3/asm-5.0.3.jar:/Users/fio/.m2/repository/org/ow2/asm/asm-commons/5.0.3/asm-commons-5.0.3.jar:/Users/fio/.m2/repository/org/ow2/asm/asm-analysis/5.0.3/asm-analysis-5.0.3.jar:/Users/fio/.m2/repository/org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3.jar:/Users/fio/.m2/repository/org/ow2/asm/asm-util/5.0.3/asm-util-5.0.3.jar:/Users/fio/.m2/repository/com/github/jnr/jnr-a64asm/1.0.0/jnr-a64asm-1.0.0.jar:/Users/fio/.m2/repository/com/github/jnr/jnr-x86asm/1.0.2/jnr-x86asm-1.0.2.jar:/Users/fio/.m2/repository/com/github/jnr/jffi/1.2.18/jffi-1.2.18.jar:/Users/fio/.m2/repository/com/github/jnr/jffi/1.2.18/jffi-1.2.18-native.jar:/Users/fio/.m2/repository/com/github/jnr/jnr-constants/0.9.12/jnr-constants-0.9.12.jar:/Users/fio/.m2/repository/com/typesafe/akka/akka-serialization-jackson_2.12/2.6.20/akka-serialization-jackson_2.12-2.6.20.jar:/Users/fio/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.11.4/jackson-core-2.11.4.jar:/Users/fio/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.11.4/jackson-annotations-2.11.4.jar:/Users/fio/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.11.4/jackson-databind-2.11.4.jar:/Users/fio/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.11.4/jackson-datatype-jdk8-2.11.4.jar:/Users/fio/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.11.4/jackson-datatype-jsr310-2.11.4.jar:/Users/fio/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.11.4/jackson-module-parameter-names-2.11.4.jar:/Users/fio/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.11.4/jackson-dataformat-cbor-2.11.4.jar:/Users/fio/.m2/repository/com/fasterxml/jackson/module/jackson-module-scala_2.12/2.11.4/jackson-module-scala_2.12-2.11.4.jar:/Users/fio/.m2/repository/com/fasterxml/jackson/module/jackson-module-paranamer/2.11.4/jackson-module-paranamer-2.11.4.jar:/Users/fio/.m2/repository/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.jar:/Users/fio/.m2/repository/org/lz4/lz4-java/1.8.0/lz4-java-1.8.0.jar:"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/Users/fio/Library/Java/JavaVirtualMachines/corretto-1.8.0_382/Contents/Home/jre/lib"/>
+    <property name="sun.java.command" value="/Users/fio/Projects/semester4/COMP41720/lab6/task4/broker/target/surefire/surefirebooter-20231106142943092_15.jar /Users/fio/Projects/semester4/COMP41720/lab6/task4/broker/target/surefire 2023-11-06T14-29-23_028-jvmRun1 surefire-20231106142943092_13tmp surefire_3-20231106142943092_14tmp"/>
+    <property name="surefire.test.class.path" value="/Users/fio/Projects/semester4/COMP41720/lab6/task4/broker/target/test-classes:/Users/fio/Projects/semester4/COMP41720/lab6/task4/broker/target/classes:/Users/fio/Projects/semester4/COMP41720/lab6/task4/core/target/core-0.0.1.jar:/Users/fio/.m2/repository/org/glassfish/metro/webservices-rt/2.4.4/webservices-rt-2.4.4.jar:/Users/fio/.m2/repository/org/glassfish/metro/webservices-api/2.4.4/webservices-api-2.4.4.jar:/Users/fio/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/fio/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/fio/.m2/repository/com/typesafe/akka/akka-testkit_2.12/2.6.20/akka-testkit_2.12-2.6.20.jar:/Users/fio/.m2/repository/org/scala-lang/scala-library/2.12.16/scala-library-2.12.16.jar:/Users/fio/.m2/repository/com/typesafe/akka/akka-actor_2.12/2.6.20/akka-actor_2.12-2.6.20.jar:/Users/fio/.m2/repository/com/typesafe/config/1.4.2/config-1.4.2.jar:/Users/fio/.m2/repository/org/scala-lang/modules/scala-java8-compat_2.12/0.8.0/scala-java8-compat_2.12-0.8.0.jar:/Users/fio/.m2/repository/com/typesafe/akka/akka-remote_2.12/2.6.20/akka-remote_2.12-2.6.20.jar:/Users/fio/.m2/repository/com/typesafe/akka/akka-stream_2.12/2.6.20/akka-stream_2.12-2.6.20.jar:/Users/fio/.m2/repository/com/typesafe/akka/akka-protobuf-v3_2.12/2.6.20/akka-protobuf-v3_2.12-2.6.20.jar:/Users/fio/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/fio/.m2/repository/com/typesafe/ssl-config-core_2.12/0.4.3/ssl-config-core_2.12-0.4.3.jar:/Users/fio/.m2/repository/org/scala-lang/modules/scala-parser-combinators_2.12/1.1.2/scala-parser-combinators_2.12-1.1.2.jar:/Users/fio/.m2/repository/com/typesafe/akka/akka-pki_2.12/2.6.20/akka-pki_2.12-2.6.20.jar:/Users/fio/.m2/repository/com/hierynomus/asn-one/0.5.0/asn-one-0.5.0.jar:/Users/fio/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/fio/.m2/repository/org/agrona/agrona/1.15.1/agrona-1.15.1.jar:/Users/fio/.m2/repository/io/netty/netty/3.10.6.Final/netty-3.10.6.Final.jar:/Users/fio/.m2/repository/com/typesafe/akka/akka-cluster-typed_2.12/2.6.20/akka-cluster-typed_2.12-2.6.20.jar:/Users/fio/.m2/repository/com/typesafe/akka/akka-actor-typed_2.12/2.6.20/akka-actor-typed_2.12-2.6.20.jar:/Users/fio/.m2/repository/com/typesafe/akka/akka-slf4j_2.12/2.6.20/akka-slf4j_2.12-2.6.20.jar:/Users/fio/.m2/repository/com/typesafe/akka/akka-cluster_2.12/2.6.20/akka-cluster_2.12-2.6.20.jar:/Users/fio/.m2/repository/com/typesafe/akka/akka-coordination_2.12/2.6.20/akka-coordination_2.12-2.6.20.jar:/Users/fio/.m2/repository/com/typesafe/akka/akka-cluster-tools_2.12/2.6.20/akka-cluster-tools_2.12-2.6.20.jar:/Users/fio/.m2/repository/com/typesafe/akka/akka-distributed-data_2.12/2.6.20/akka-distributed-data_2.12-2.6.20.jar:/Users/fio/.m2/repository/org/lmdbjava/lmdbjava/0.7.0/lmdbjava-0.7.0.jar:/Users/fio/.m2/repository/com/github/jnr/jnr-ffi/2.1.9/jnr-ffi-2.1.9.jar:/Users/fio/.m2/repository/org/ow2/asm/asm/5.0.3/asm-5.0.3.jar:/Users/fio/.m2/repository/org/ow2/asm/asm-commons/5.0.3/asm-commons-5.0.3.jar:/Users/fio/.m2/repository/org/ow2/asm/asm-analysis/5.0.3/asm-analysis-5.0.3.jar:/Users/fio/.m2/repository/org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3.jar:/Users/fio/.m2/repository/org/ow2/asm/asm-util/5.0.3/asm-util-5.0.3.jar:/Users/fio/.m2/repository/com/github/jnr/jnr-a64asm/1.0.0/jnr-a64asm-1.0.0.jar:/Users/fio/.m2/repository/com/github/jnr/jnr-x86asm/1.0.2/jnr-x86asm-1.0.2.jar:/Users/fio/.m2/repository/com/github/jnr/jffi/1.2.18/jffi-1.2.18.jar:/Users/fio/.m2/repository/com/github/jnr/jffi/1.2.18/jffi-1.2.18-native.jar:/Users/fio/.m2/repository/com/github/jnr/jnr-constants/0.9.12/jnr-constants-0.9.12.jar:/Users/fio/.m2/repository/com/typesafe/akka/akka-serialization-jackson_2.12/2.6.20/akka-serialization-jackson_2.12-2.6.20.jar:/Users/fio/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.11.4/jackson-core-2.11.4.jar:/Users/fio/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.11.4/jackson-annotations-2.11.4.jar:/Users/fio/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.11.4/jackson-databind-2.11.4.jar:/Users/fio/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.11.4/jackson-datatype-jdk8-2.11.4.jar:/Users/fio/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.11.4/jackson-datatype-jsr310-2.11.4.jar:/Users/fio/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.11.4/jackson-module-parameter-names-2.11.4.jar:/Users/fio/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.11.4/jackson-dataformat-cbor-2.11.4.jar:/Users/fio/.m2/repository/com/fasterxml/jackson/module/jackson-module-scala_2.12/2.11.4/jackson-module-scala_2.12-2.11.4.jar:/Users/fio/.m2/repository/com/fasterxml/jackson/module/jackson-module-paranamer/2.11.4/jackson-module-paranamer-2.11.4.jar:/Users/fio/.m2/repository/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.jar:/Users/fio/.m2/repository/org/lz4/lz4-java/1.8.0/lz4-java-1.8.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/fio"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/Users/fio/Library/Java/JavaVirtualMachines/corretto-1.8.0_382/Contents/Home/jre"/>
+    <property name="basedir" value="/Users/fio/Projects/semester4/COMP41720/lab6/task4/broker"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/fio/Projects/semester4/COMP41720/lab6/task4/broker/target/surefire/surefirebooter-20231106142943092_15.jar"/>
+    <property name="sun.boot.class.path" value="/Users/fio/Library/Java/JavaVirtualMachines/corretto-1.8.0_382/Contents/Home/jre/lib/resources.jar:/Users/fio/Library/Java/JavaVirtualMachines/corretto-1.8.0_382/Contents/Home/jre/lib/rt.jar:/Users/fio/Library/Java/JavaVirtualMachines/corretto-1.8.0_382/Contents/Home/jre/lib/sunrsasign.jar:/Users/fio/Library/Java/JavaVirtualMachines/corretto-1.8.0_382/Contents/Home/jre/lib/jsse.jar:/Users/fio/Library/Java/JavaVirtualMachines/corretto-1.8.0_382/Contents/Home/jre/lib/jce.jar:/Users/fio/Library/Java/JavaVirtualMachines/corretto-1.8.0_382/Contents/Home/jre/lib/charsets.jar:/Users/fio/Library/Java/JavaVirtualMachines/corretto-1.8.0_382/Contents/Home/jre/lib/jfr.jar:/Users/fio/Library/Java/JavaVirtualMachines/corretto-1.8.0_382/Contents/Home/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_382-b05"/>
+    <property name="user.name" value="fio"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="14.0"/>
+    <property name="java.endorsed.dirs" value="/Users/fio/Library/Java/JavaVirtualMachines/corretto-1.8.0_382/Contents/Home/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/fio/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-8/issues/"/>
+    <property name="java.io.tmpdir" value="/var/folders/c1/0p2g0x9n6fq4khgcrhdld8wr0000gn/T/"/>
+    <property name="java.version" value="1.8.0_382"/>
+    <property name="user.dir" value="/Users/fio/Projects/semester4/COMP41720/lab6/task4/broker"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/fio/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="25.382-b05"/>
+    <property name="java.specification.maintenance.version" value="5"/>
+    <property name="java.ext.dirs" value="/Users/fio/Library/Java/Extensions:/Users/fio/Library/Java/JavaVirtualMachines/corretto-1.8.0_382/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="" classname="QuoterTests" time="1.406">
+    <error message="Failed to bind to: localhost/127.0.0.1:2553" type="org.jboss.netty.channel.ChannelException"><![CDATA[org.jboss.netty.channel.ChannelException: Failed to bind to: localhost/127.0.0.1:2553
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:272)
+	at akka.remote.transport.netty.NettyTransport.$anonfun$listen$1(NettyTransport.scala:509)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:63)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:100)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:85)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:100)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:49)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:48)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175)
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.jboss.netty.channel.socket.nio.NioServerBoss$RegisterTask.run(NioServerBoss.java:193)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.processTaskQueue(AbstractNioSelector.java:391)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:315)
+	at org.jboss.netty.channel.socket.nio.NioServerBoss.run(NioServerBoss.java:42)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+]]></error>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+SLF4J: Failed to load class "org.slf4j.impl.StaticMDCBinder".
+SLF4J: Defaulting to no-operation MDCAdapter implementation.
+SLF4J: See http://www.slf4j.org/codes.html#no_static_mdc_binder for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="" classname="QuoterTests" time="1.408">
+    <error message="system must not be null!" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: system must not be null!
+	at java.util.Objects.requireNonNull(Objects.java:228)
+	at akka.actor.ExtensionId.apply(Extension.scala:78)
+	at akka.actor.ExtensionId.apply$(Extension.scala:77)
+	at akka.testkit.TestKitExtension$.apply(TestKitExtension.scala:15)
+	at akka.testkit.package$TestDuration$.dilated$extension(package.scala:59)
+	at akka.testkit.TestKit$.shutdownActorSystem(TestKit.scala:1027)
+	at akka.testkit.TestKit.shutdownActorSystem(TestKit.scala)
+	at QuoterTests.teardown(QuoterTests.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></error>
+  </testcase>
+</testsuite>
